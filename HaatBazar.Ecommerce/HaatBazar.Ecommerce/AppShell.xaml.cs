@@ -1,10 +1,10 @@
-﻿using haatbazar.ecommerce.ViewModels;
-using haatbazar.ecommerce.Views;
+﻿using HaatBazar.Ecommerce.ViewModels;
+using HaatBazar.Ecommerce.Views;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace haatbazar.ecommerce
+namespace HaatBazar.Ecommerce
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
@@ -15,5 +15,9 @@ namespace haatbazar.ecommerce
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
         }
 
+        private async void OnMenuItemClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//LoginPage");
+        }
     }
 }

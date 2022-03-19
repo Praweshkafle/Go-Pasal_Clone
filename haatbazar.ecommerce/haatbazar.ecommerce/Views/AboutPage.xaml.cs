@@ -3,7 +3,7 @@ using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace haatbazar.ecommerce.Views
+namespace HaatBazar.Ecommerce.Views
 {
     public partial class AboutPage : ContentPage
     {

@@ -1,9 +1,10 @@
-﻿using haatbazar.ecommerce.Views;
+﻿using HaatBazar.Ecommerce.Services;
+using HaatBazar.Ecommerce.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace haatbazar.ecommerce
+namespace HaatBazar.Ecommerce
 {
     public partial class App : Application
     {
@@ -12,6 +13,7 @@ namespace haatbazar.ecommerce
         {
             InitializeComponent();
 
+            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
